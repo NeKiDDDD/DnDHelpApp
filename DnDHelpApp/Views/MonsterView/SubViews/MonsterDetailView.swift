@@ -8,11 +8,49 @@
 import SwiftUI
 
 struct MonsterDetailView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  let monster: MonsterStruct
+  
+  var body: some View {
+    ScrollView {
+      VStack(alignment: .leading, spacing: 16) {
+        Text(monster.name)
+          .font(.largeTitle)
+          .fontWeight(.bold)
+        
+        if let type = monster.type {
+          Text("Type: \(type.capitalized)")
+            .font(.subheadline)
+        }
+        
+        if let alignment = monster.alignment {
+          Text("Alignment: \(alignment)")
+            .font(.subheadline)
+        }
+        
+        if let hitPoints = monster.hitPoints {
+          Text("Hit Points: \(hitPoints)")
+            .font(.subheadline)
+        }
+        
+        if let armorClass = monster.armorClass {
+          Text("Armor Class: \(armorClass)")
+            .font(.subheadline)
+        }
+        
+        if let actions = monster.actions {
+          Text("Actions:")
+            .font(.headline)
+          ForEach(actions, id: \.name) { action in
+            Text("• \(action.name): \(action.description)")
+              .font(.body)
+          }
+        }
+      }
+      .padding()
     }
+  }
 }
 
-#Preview {
-    MonsterDetailView()
-}
+//#Preview {
+//  MonsterDetailView()
+//}

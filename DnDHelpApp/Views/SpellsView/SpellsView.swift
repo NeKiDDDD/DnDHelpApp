@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct SpellsView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+  @State private var service = Open5eService()
+  
+  var body: some View {
+    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  }
 }
 
 #Preview {
-    SpellsView()
+  SpellsView()
 }

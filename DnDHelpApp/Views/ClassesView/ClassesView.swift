@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct ClassesView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  @State private var service = Open5eService()
+  
+  var body: some View {
+    NavigationView {
+      ScrollView(showsIndicators: false) {
+        ForEach(service.classes) { className in
+          NavigationLink(destination: ClassDetailView(dndClass: className)) {
+              OneClassCellView(oneClass: className)
+          }
+          .buttonStyle(PlainButtonStyle())
+        }
+      }
+      .navigationTitle("D&D Classes")
+      .onAppear {
+        service.fetchClasses()
+      }
     }
+  }
 }
 
 #Preview {
-    ClassesView()
+  ClassesView()
 }

@@ -7,18 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0177F112CBC5DAC00BEE552 /* SpellsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0177F102CBC5DAC00BEE552 /* SpellsView.swift */; };
+		A0177F142CBC5EE100BEE552 /* SpellStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0177F132CBC5EE100BEE552 /* SpellStruct.swift */; };
+		A0177F162CBC5FBB00BEE552 /* SpellDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0177F152CBC5FBB00BEE552 /* SpellDetailView.swift */; };
+		A0177F182CBC5FCF00BEE552 /* OneSpellCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0177F172CBC5FCF00BEE552 /* OneSpellCellView.swift */; };
+		A03138952CBBBEB200492B6A /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03138942CBBBEB200492B6A /* RoundedCorners.swift */; };
+		A031389A2CBBE9E900492B6A /* Open5eAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03138992CBBE9E900492B6A /* Open5eAPI.swift */; };
+		A031389D2CBBEA6C00492B6A /* ClassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031389C2CBBEA6C00492B6A /* ClassesView.swift */; };
+		A03138A02CBBEAC500492B6A /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = A031389F2CBBEAC500492B6A /* CombineMoya */; };
+		A03138A22CBBEAC500492B6A /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = A03138A12CBBEAC500492B6A /* Moya */; };
+		A03138A42CBBEAC500492B6A /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = A03138A32CBBEAC500492B6A /* ReactiveMoya */; };
+		A03138A62CBBEAC500492B6A /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = A03138A52CBBEAC500492B6A /* RxMoya */; };
+		A03138A92CBBF1FC00492B6A /* OneClassCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03138A82CBBF1FC00492B6A /* OneClassCellView.swift */; };
+		A03138AB2CBBFB0900492B6A /* ClassDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03138AA2CBBFB0900492B6A /* ClassDetailView.swift */; };
+		A03138AF2CBC076C00492B6A /* ClassStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03138AE2CBC076C00492B6A /* ClassStruct.swift */; };
+		A03138B22CBC094100492B6A /* MonsterStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03138B12CBC094100492B6A /* MonsterStruct.swift */; };
+		A03138B52CBC09A500492B6A /* MonstersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03138B42CBC09A500492B6A /* MonstersView.swift */; };
+		A03138B82CBC09F400492B6A /* MonsterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03138B72CBC09F400492B6A /* MonsterDetailView.swift */; };
+		A03138BA2CBC110200492B6A /* OneMonsterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03138B92CBC110200492B6A /* OneMonsterCellView.swift */; };
+		A04FE1B82C518D4B005E53A6 /* SideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FE1B72C518D4B005E53A6 /* SideView.swift */; };
 		A0B1230A2C4FEA9200CD8677 /* DnDHelpAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B123092C4FEA9200CD8677 /* DnDHelpAppApp.swift */; };
 		A0B1230C2C4FEA9200CD8677 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B1230B2C4FEA9200CD8677 /* ContentView.swift */; };
 		A0B1230E2C4FEA9300CD8677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B1230D2C4FEA9300CD8677 /* Assets.xcassets */; };
 		A0B123112C4FEA9300CD8677 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B123102C4FEA9300CD8677 /* Preview Assets.xcassets */; };
+		A0B833572CFE44A4009DCAD9 /* CubesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B833552CFE44A4009DCAD9 /* CubesView.swift */; };
+		A0EC806D2C7A08C300059DCF /* ButtonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EC806B2C7A08C300059DCF /* ButtonStruct.swift */; };
+		A0EC806F2C7A08CB00059DCF /* MultyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EC806E2C7A08CB00059DCF /* MultyTextView.swift */; };
+		A0EC80732C7A090C00059DCF /* medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0EC80722C7A090C00059DCF /* medium.otf */; };
+		A0EC80772C7A097000059DCF /* ConstantAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EC80762C7A097000059DCF /* ConstantAppInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0177F102CBC5DAC00BEE552 /* SpellsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsView.swift; sourceTree = "<group>"; };
+		A0177F132CBC5EE100BEE552 /* SpellStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellStruct.swift; sourceTree = "<group>"; };
+		A0177F152CBC5FBB00BEE552 /* SpellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailView.swift; sourceTree = "<group>"; };
+		A0177F172CBC5FCF00BEE552 /* OneSpellCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSpellCellView.swift; sourceTree = "<group>"; };
+		A03138942CBBBEB200492B6A /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
+		A03138992CBBE9E900492B6A /* Open5eAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Open5eAPI.swift; sourceTree = "<group>"; };
+		A031389C2CBBEA6C00492B6A /* ClassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesView.swift; sourceTree = "<group>"; };
+		A03138A82CBBF1FC00492B6A /* OneClassCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneClassCellView.swift; sourceTree = "<group>"; };
+		A03138AA2CBBFB0900492B6A /* ClassDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailView.swift; sourceTree = "<group>"; };
+		A03138AE2CBC076C00492B6A /* ClassStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassStruct.swift; sourceTree = "<group>"; };
+		A03138B12CBC094100492B6A /* MonsterStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterStruct.swift; sourceTree = "<group>"; };
+		A03138B42CBC09A500492B6A /* MonstersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonstersView.swift; sourceTree = "<group>"; };
+		A03138B72CBC09F400492B6A /* MonsterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDetailView.swift; sourceTree = "<group>"; };
+		A03138B92CBC110200492B6A /* OneMonsterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMonsterCellView.swift; sourceTree = "<group>"; };
+		A04FE1B72C518D4B005E53A6 /* SideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideView.swift; sourceTree = "<group>"; };
 		A0B123062C4FEA9200CD8677 /* DnDHelpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DnDHelpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B123092C4FEA9200CD8677 /* DnDHelpAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDHelpAppApp.swift; sourceTree = "<group>"; };
 		A0B1230B2C4FEA9200CD8677 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A0B1230D2C4FEA9300CD8677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0B123102C4FEA9300CD8677 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0B833552CFE44A4009DCAD9 /* CubesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubesView.swift; sourceTree = "<group>"; };
+		A0EC806B2C7A08C300059DCF /* ButtonStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStruct.swift; sourceTree = "<group>"; };
+		A0EC806E2C7A08CB00059DCF /* MultyTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultyTextView.swift; sourceTree = "<group>"; };
+		A0EC80722C7A090C00059DCF /* medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = medium.otf; sourceTree = "<group>"; };
+		A0EC80742C7A093500059DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A0EC80762C7A097000059DCF /* ConstantAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantAppInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,16 +71,160 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03138A22CBBEAC500492B6A /* Moya in Frameworks */,
+				A03138A02CBBEAC500492B6A /* CombineMoya in Frameworks */,
+				A03138A62CBBEAC500492B6A /* RxMoya in Frameworks */,
+				A03138A42CBBEAC500492B6A /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0177F0F2CBC5D9900BEE552 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				A0177F152CBC5FBB00BEE552 /* SpellDetailView.swift */,
+				A0177F172CBC5FCF00BEE552 /* OneSpellCellView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		A0177F122CBC5ECF00BEE552 /* SpellStruct */ = {
+			isa = PBXGroup;
+			children = (
+				A0177F132CBC5EE100BEE552 /* SpellStruct.swift */,
+			);
+			path = SpellStruct;
+			sourceTree = "<group>";
+		};
+		A03138932CBBBEA500492B6A /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				A03138942CBBBEB200492B6A /* RoundedCorners.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		A03138972CBBE9B300492B6A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A03138982CBBE9BD00492B6A /* MoyaApi */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A03138982CBBE9BD00492B6A /* MoyaApi */ = {
+			isa = PBXGroup;
+			children = (
+				A03138992CBBE9E900492B6A /* Open5eAPI.swift */,
+			);
+			path = MoyaApi;
+			sourceTree = "<group>";
+		};
+		A031389B2CBBEA5800492B6A /* ClassesView */ = {
+			isa = PBXGroup;
+			children = (
+				A03138A72CBBF1EC00492B6A /* SubViews */,
+				A031389C2CBBEA6C00492B6A /* ClassesView.swift */,
+			);
+			path = ClassesView;
+			sourceTree = "<group>";
+		};
+		A031389E2CBBEAC500492B6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A03138A72CBBF1EC00492B6A /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				A03138A82CBBF1FC00492B6A /* OneClassCellView.swift */,
+				A03138AA2CBBFB0900492B6A /* ClassDetailView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		A03138AC2CBC073400492B6A /* ApiEntities */ = {
+			isa = PBXGroup;
+			children = (
+				A0177F122CBC5ECF00BEE552 /* SpellStruct */,
+				A03138B02CBC091500492B6A /* MonsterStruct */,
+				A03138AD2CBC074200492B6A /* ClassStruct */,
+			);
+			path = ApiEntities;
+			sourceTree = "<group>";
+		};
+		A03138AD2CBC074200492B6A /* ClassStruct */ = {
+			isa = PBXGroup;
+			children = (
+				A03138AE2CBC076C00492B6A /* ClassStruct.swift */,
+			);
+			path = ClassStruct;
+			sourceTree = "<group>";
+		};
+		A03138B02CBC091500492B6A /* MonsterStruct */ = {
+			isa = PBXGroup;
+			children = (
+				A03138B12CBC094100492B6A /* MonsterStruct.swift */,
+			);
+			path = MonsterStruct;
+			sourceTree = "<group>";
+		};
+		A03138B32CBC099300492B6A /* MonsterView */ = {
+			isa = PBXGroup;
+			children = (
+				A03138B62CBC09CF00492B6A /* SubViews */,
+				A03138B42CBC09A500492B6A /* MonstersView.swift */,
+			);
+			path = MonsterView;
+			sourceTree = "<group>";
+		};
+		A03138B62CBC09CF00492B6A /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				A03138B72CBC09F400492B6A /* MonsterDetailView.swift */,
+				A03138B92CBC110200492B6A /* OneMonsterCellView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		A04FE1B52C518D36005E53A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0B833562CFE44A4009DCAD9 /* CubesView */,
+				A03138B32CBC099300492B6A /* MonsterView */,
+				A031389B2CBBEA5800492B6A /* ClassesView */,
+				A06265E32C519CCB00F98FEF /* SpellsView */,
+				A04FE1B62C518D3D005E53A6 /* SideView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A04FE1B62C518D3D005E53A6 /* SideView */ = {
+			isa = PBXGroup;
+			children = (
+				A04FE1B72C518D4B005E53A6 /* SideView.swift */,
+			);
+			path = SideView;
+			sourceTree = "<group>";
+		};
+		A06265E32C519CCB00F98FEF /* SpellsView */ = {
+			isa = PBXGroup;
+			children = (
+				A0177F0F2CBC5D9900BEE552 /* SubViews */,
+				A0177F102CBC5DAC00BEE552 /* SpellsView.swift */,
+			);
+			path = SpellsView;
+			sourceTree = "<group>";
+		};
 		A0B122FD2C4FEA9200CD8677 = {
 			isa = PBXGroup;
 			children = (
 				A0B123082C4FEA9200CD8677 /* DnDHelpApp */,
+				A031389E2CBBEAC500492B6A /* Frameworks */,
 				A0B123072C4FEA9200CD8677 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +240,11 @@
 		A0B123082C4FEA9200CD8677 /* DnDHelpApp */ = {
 			isa = PBXGroup;
 			children = (
+				A03138972CBBE9B300492B6A /* Services */,
+				A0EC80742C7A093500059DCF /* Info.plist */,
+				A0EC80712C7A090200059DCF /* Fonts */,
+				A0EC806A2C7A089C00059DCF /* Entity */,
+				A04FE1B52C518D36005E53A6 /* Views */,
 				A0B123092C4FEA9200CD8677 /* DnDHelpAppApp.swift */,
 				A0B1230B2C4FEA9200CD8677 /* ContentView.swift */,
 				A0B1230D2C4FEA9300CD8677 /* Assets.xcassets */,
@@ -65,6 +259,58 @@
 				A0B123102C4FEA9300CD8677 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A0B833562CFE44A4009DCAD9 /* CubesView */ = {
+			isa = PBXGroup;
+			children = (
+				A0B833552CFE44A4009DCAD9 /* CubesView.swift */,
+			);
+			path = CubesView;
+			sourceTree = "<group>";
+		};
+		A0EC806A2C7A089C00059DCF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A03138AC2CBC073400492B6A /* ApiEntities */,
+				A03138932CBBBEA500492B6A /* Shapes */,
+				A0EC80752C7A095300059DCF /* ConstantAppInfo */,
+				A0EC80702C7A08CD00059DCF /* MultyTextView */,
+				A0EC806C2C7A08C300059DCF /* ButtonStruct */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A0EC806C2C7A08C300059DCF /* ButtonStruct */ = {
+			isa = PBXGroup;
+			children = (
+				A0EC806B2C7A08C300059DCF /* ButtonStruct.swift */,
+			);
+			path = ButtonStruct;
+			sourceTree = "<group>";
+		};
+		A0EC80702C7A08CD00059DCF /* MultyTextView */ = {
+			isa = PBXGroup;
+			children = (
+				A0EC806E2C7A08CB00059DCF /* MultyTextView.swift */,
+			);
+			path = MultyTextView;
+			sourceTree = "<group>";
+		};
+		A0EC80712C7A090200059DCF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A0EC80722C7A090C00059DCF /* medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A0EC80752C7A095300059DCF /* ConstantAppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A0EC80762C7A097000059DCF /* ConstantAppInfo.swift */,
+			);
+			path = ConstantAppInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +357,9 @@
 				Base,
 			);
 			mainGroup = A0B122FD2C4FEA9200CD8677;
+			packageReferences = (
+				A03138962CBBE74E00492B6A /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = A0B123072C4FEA9200CD8677 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +376,7 @@
 			files = (
 				A0B123112C4FEA9300CD8677 /* Preview Assets.xcassets in Resources */,
 				A0B1230E2C4FEA9300CD8677 /* Assets.xcassets in Resources */,
+				A0EC80732C7A090C00059DCF /* medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +387,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04FE1B82C518D4B005E53A6 /* SideView.swift in Sources */,
+				A0EC806D2C7A08C300059DCF /* ButtonStruct.swift in Sources */,
+				A03138B22CBC094100492B6A /* MonsterStruct.swift in Sources */,
+				A0EC80772C7A097000059DCF /* ConstantAppInfo.swift in Sources */,
+				A0177F162CBC5FBB00BEE552 /* SpellDetailView.swift in Sources */,
+				A03138952CBBBEB200492B6A /* RoundedCorners.swift in Sources */,
+				A0177F142CBC5EE100BEE552 /* SpellStruct.swift in Sources */,
+				A031389A2CBBE9E900492B6A /* Open5eAPI.swift in Sources */,
 				A0B1230C2C4FEA9200CD8677 /* ContentView.swift in Sources */,
+				A0B833572CFE44A4009DCAD9 /* CubesView.swift in Sources */,
+				A03138B82CBC09F400492B6A /* MonsterDetailView.swift in Sources */,
+				A03138BA2CBC110200492B6A /* OneMonsterCellView.swift in Sources */,
+				A03138A92CBBF1FC00492B6A /* OneClassCellView.swift in Sources */,
+				A0177F112CBC5DAC00BEE552 /* SpellsView.swift in Sources */,
+				A03138AF2CBC076C00492B6A /* ClassStruct.swift in Sources */,
+				A0177F182CBC5FCF00BEE552 /* OneSpellCellView.swift in Sources */,
+				A03138AB2CBBFB0900492B6A /* ClassDetailView.swift in Sources */,
 				A0B1230A2C4FEA9200CD8677 /* DnDHelpAppApp.swift in Sources */,
+				A0EC806F2C7A08CB00059DCF /* MultyTextView.swift in Sources */,
+				A03138B52CBC09A500492B6A /* MonstersView.swift in Sources */,
+				A031389D2CBBEA6C00492B6A /* ClassesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,24 +541,30 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DnDHelpApp/Preview Content\"";
-				DEVELOPMENT_TEAM = YB92KKZ6VH;
+				DEVELOPMENT_TEAM = 8Z9CU7FVMB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DnDHelpApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = meaw.DnDHelpApp;
+				PRODUCT_BUNDLE_IDENTIFIER = meaw.DnDHelp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,24 +576,30 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DnDHelpApp/Preview Content\"";
-				DEVELOPMENT_TEAM = YB92KKZ6VH;
+				DEVELOPMENT_TEAM = 8Z9CU7FVMB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DnDHelpApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = meaw.DnDHelpApp;
+				PRODUCT_BUNDLE_IDENTIFIER = meaw.DnDHelp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +625,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A03138962CBBE74E00492B6A /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A031389F2CBBEAC500492B6A /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03138962CBBE74E00492B6A /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		A03138A12CBBEAC500492B6A /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03138962CBBE74E00492B6A /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		A03138A32CBBEAC500492B6A /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03138962CBBE74E00492B6A /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		A03138A52CBBEAC500492B6A /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03138962CBBE74E00492B6A /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0B122FE2C4FEA9200CD8677 /* Project object */;
 }
