@@ -13,21 +13,28 @@ enum Open5eAPI: TargetType {
   case getMonsters(page: Int, pageSize: Int)
   case getSpells
   case getItemDetails(endpoint: String)
+  case getOneClass(endpoint: String)
+  
+//  var baseURL: URL {
+//    URL(string: "https://api.open5e.com")!
+//  }
   
   var baseURL: URL {
-    URL(string: "https://api.open5e.com")!
+    URL(string: "http://localhost:3000")!
   }
   
   var path: String {
     switch self {
     case .getClasses:
-      return "/classes/"
+      return "/api/classes/"
     case .getMonsters:
-      return "/monsters/"
+      return "/api/monsters/"
     case .getSpells:
-      return "/spells/"
+      return "/api/spells/"
     case .getItemDetails(let endpoint):
-      return "/\(endpoint)/"
+      return "/api/\(endpoint)/"
+    case .getOneClass(let endpoint):
+      return "\(endpoint)"
     }
   }
   
@@ -39,7 +46,7 @@ enum Open5eAPI: TargetType {
     switch self {
     case .getMonsters(let page, let pageSize):
       return .requestParameters(parameters: ["page": page, "limit": pageSize], encoding: URLEncoding.queryString)
-    case .getClasses, .getSpells, .getItemDetails:
+    case .getClasses, .getSpells, .getItemDetails, .getOneClass:
       return .requestPlain
     }
   }
@@ -53,9 +60,10 @@ enum Open5eAPI: TargetType {
 @Observable final class Open5eService {
   private let provider = MoyaProvider<Open5eAPI>()
   
-  var classes: [DndClass] = []
-  var monsters: [MonsterStruct] = []
+  var classes: [SimpleClass] = []
+  var monsters: [Monster] = []
   var spells: [String] = []
+  var oneClass: Class?
   
   private var currentPage = 1
   private let pageSize = 50
@@ -79,9 +87,30 @@ enum Open5eAPI: TargetType {
       switch result {
       case .success(let response):
         do {
+//          print(String(data: response.data, encoding: .utf8) ?? "Нет данных")
+          let decodedClasses = try JSONDecoder().decode(ClassesResponse.self, from: response.data)
+          DispatchQueue.main.async {
+            self.classes = decodedClasses.results
+          }
+        } catch {
+          print("Ошибка декодирования: \(error)")
+        }
+      case .failure(let error):
+        print("Ошибка запроса: \(error.localizedDescription)")
+      }
+    }
+  }
+  
+  func fetchOneClass(with url: String) {
+    provider.request(.getOneClass(endpoint: url)) { result in
+      switch result {
+      case .success(let response):
+        do {
           print(String(data: response.data, encoding: .utf8) ?? "Нет данных")
-          let decodedClasses = try JSONDecoder().decode(ClassResponse.self, from: response.data)
-          self.classes = decodedClasses.results
+          let decodedClasses = try JSONDecoder().decode(Class.self, from: response.data)
+          DispatchQueue.main.async {
+            self.oneClass = decodedClasses.self
+          }
         } catch {
           print("Ошибка декодирования: \(error)")
         }
@@ -96,10 +125,10 @@ enum Open5eAPI: TargetType {
       switch result {
       case .success(let response):
         do {
-          let decoded = try JSONDecoder().decode(MonsterResponse.self, from: response.data)
+          let _ = try JSONDecoder().decode(Monster.self, from: response.data)
           DispatchQueue.main.async {
-            self.monsters += decoded.results
-            self.hasMoreMonsters = !decoded.results.isEmpty
+//            self.monsters += decoded.results
+//            self.hasMoreMonsters = !decoded.results.isEmpty
             completion?(true)
           }
         } catch {

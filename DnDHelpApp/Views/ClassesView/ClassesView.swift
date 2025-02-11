@@ -13,11 +13,11 @@ struct ClassesView: View {
   var body: some View {
     NavigationView {
       ScrollView(showsIndicators: false) {
-        ForEach(service.classes) { className in
-          NavigationLink(destination: ClassDetailView(dndClass: className)) {
+        ForEach(service.classes, id: \.index) { className in
+          NavigationLink(destination: ClassDetailView(endpoint: className.url)) {
               OneClassCellView(oneClass: className)
           }
-          .buttonStyle(PlainButtonStyle())
+          .buttonStyle(.plain)
         }
       }
       .navigationTitle("D&D Classes")

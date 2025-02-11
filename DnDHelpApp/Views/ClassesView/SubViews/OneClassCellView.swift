@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OneClassCellView: View {
-  let oneClass: DndClass
+  let oneClass: SimpleClass
   
   var body: some View {
     HStack {
@@ -19,11 +19,11 @@ struct OneClassCellView: View {
           Spacer()
         }
         HStack {
-          if let hitDice = oneClass.hitDice {
-            Text("Hit Dice: \(hitDice)")
-              .font(.subheadline)
-              .foregroundColor(.secondary)
-          }
+//          if let hitDice = oneClass.hitDice {
+//            Text("Hit Dice: \(oneClass.hitDie)")
+//              .font(.subheadline)
+//              .foregroundColor(.secondary)
+////          }
           Spacer()
         }
       }

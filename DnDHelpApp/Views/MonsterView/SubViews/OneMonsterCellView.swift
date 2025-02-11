@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct OneMonsterCellView: View {
-  let monster: MonsterStruct
+  let monster: Monster
   
   var body: some View {
     HStack {
-      Text(monster.name)
+//      Text(monster.name)
       Spacer()
-      if let challengeRate = monster.challengeRating {
-        Text("Challenge Rating: \(challengeRate)")
-          .font(.subheadline)
-          .foregroundColor(.secondary)
-      }
+//      if let challengeRate = monster.challengeRating {
+//        Text("Challenge Rating: \(challengeRate)")
+//          .font(.subheadline)
+//          .foregroundColor(.secondary)
+//      }
     }
     .padding()
     .background(
